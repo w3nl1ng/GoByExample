@@ -5,16 +5,15 @@ import (
 	"fmt"
 )
 
-//go:embed folder\single_file.txt
+//go:embed folder/single_file.txt
 var fileString string
 
-//go:embed folder\single_file.txt
+//go:embed folder/single_file.txt
 var fileByte []byte
 
-//go:embed folder\single_file.txt
-//go:embed folder\*.hash
+//go:embed folder/single_file.txt
+//go:embed folder/*.hash
 var res embed.FS
-
 
 func main() {
 	fmt.Println(fileString)
